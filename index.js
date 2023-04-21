@@ -24,6 +24,22 @@ const questions = [{
     message : "licnese of your project:",
     type : "list",
     name : "license",
+},{
+    message : "installation instructions of your project:",
+    type : "input",
+    name : "installation",
+},{
+    message : "Usage information of your project:",
+    type : "input",
+    name : "usage",
+},{
+    message : "Contribution of your project:",
+    type : "input",
+    name : "contribution",
+},{
+    message : "Test instructions of your project:",
+    type : "input",
+    name : "test",
 }];
 
 // TODO: Create a function to write README file
