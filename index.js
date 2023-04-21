@@ -21,9 +21,9 @@ const questions = [{
     type : "input",
     name : "username",
 },{
-    message : "licnese of your project:",
-    type : "list",
-    name : "license",
+    message : "Test instructions of your project:",
+    type : "input",
+    name : "test",
 },{
     message : "installation instructions of your project:",
     type : "input",
@@ -37,9 +37,9 @@ const questions = [{
     type : "input",
     name : "contribution",
 },{
-    message : "Test instructions of your project:",
-    type : "input",
-    name : "test",
+    message : "license of your project:",
+    type : "list",
+    name : "license",
 }];
 
 // TODO: Create a function to write README file
@@ -56,7 +56,7 @@ function init() {
     .prompt(questions)
     .then((data) => {
         console.log(data);
-        const fileName = `README_${data.userName.toLowerCase().split(' ').join('')}.md`;
+        const fileName = `README_${data.username.toLowerCase().split(' ').join('')}.md`;
         writeToFile(fileName, data);
     });
 }
