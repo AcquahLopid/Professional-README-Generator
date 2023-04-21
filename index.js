@@ -40,6 +40,7 @@ const questions = [{
     message : "license of your project:",
     type : "list",
     name : "license",
+    choices : ["Apache License 2.0", "MIT License", "GNU General Public License v3.0", "N/A"],
 }];
 
 // TODO: Create a function to write README file
@@ -56,8 +57,8 @@ function init() {
     .prompt(questions)
     .then((data) => {
         console.log(data);
-        const fileName = `README_${data.username.toLowerCase().split(' ').join('')}.md`;
-        writeToFile(fileName, data);
+        const fileNameForMd = `README_${data.title}.md`;
+        writeToFile(fileNameForMd, data);
     });
 }
 
