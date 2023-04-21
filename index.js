@@ -19,7 +19,7 @@ const questions = [{
 },{
     message : "Github username:",
     type : "input",
-    name : "userName",
+    name : "username",
 },{
     message : "licnese of your project:",
     type : "list",
