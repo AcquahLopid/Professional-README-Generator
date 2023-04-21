@@ -49,6 +49,8 @@ function init() {
 ```
 ## Video Example
 [Video Example Of Creating README file](./Video/Professional-README-Generator%20-%20Visual%20Studio%20Code%202023-04-21%2000-31-49.mp4)
+
+[Screenshot of Created README](./Video/Screenshot%202023-04-21%20004401.png)
 ## Credits
 [js Switch W3Schools](https://www.w3schools.com/js/js_switch.asp)
 
