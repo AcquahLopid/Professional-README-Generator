@@ -17,11 +17,11 @@ const questions = [{
     type : "input",
     name : "email",
 },{
-    message : "License of your project:",
+    message : "Github username:",
     type : "input",
-    name : "title",
+    name : "userName",
 },{
-    message : "Usage of your project:",
+    message : "licnese of your project:",
     type : "list",
     name : "license",
 }];
@@ -37,11 +37,12 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer 
-    .createPromptModule(questions)
+    .prompt(questions)
     .then((data) => {
         console.log(data);
-        const fileName = 'README_${}'
-    })
+        const fileName = `README_${data.userName.toLowerCase().split(' ').join('')}.md`;
+        writeToFile(fileName, data);
+    });
 }
 
 // Function call to initialize app
